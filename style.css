@@ -1,0 +1,495 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+body{
+    background-color: #abaeab;
+}
+/* PRAROZ, 2021
+How To Create A Website using HTML & CSS | Step-by-Step Tutorial.
+YouTube video
+https://youtu.be/CQZxeoQeo5c
+Accessed at: 2 Setember 2024
+ until btn*/
+.main {
+    width: 100%;
+    background-color: #63A375;
+    height: 13vh;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+/*
+Easy WebCode, 2022.
+How To Create Rounded And Circular Images In HTML And CSS Tutorial.
+YouTube video
+ https://youtu.be/AEgTw3xl53o?si=miJ9dxAfvVTiYA1g
+ Accessed at: 2 Setember 2024
+ icon img*/
+.icon img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 80px; 
+    height: 80px;
+    margin-right: 15px; 
+}
+
+.icon h2 {
+    font-family: 'Times New Roman';
+    font-size: 24px; 
+    letter-spacing: 2px;
+    color: #fff;
+    margin: 0; 
+}
+
+.menu {
+    width: auto; 
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-right: 20px;
+}
+
+ul li {
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #6b2738;
+}
+.fa-cart-shopping{
+    font-size: 20px;
+}
+.fa-user{
+    font-size: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.srch {
+    padding: 5px 10px;
+    border: 1px solid #6b2738;
+    border-radius: 5px;
+}
+
+.btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #6b2738;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #6b2738;
+}
+.cont{
+    width: 1450px;
+    height: auto;
+    margin-left: 30px;
+    background-color: #c9fdbc;
+    border-radius: 15%;
+    margin-top: 15px;
+}
+
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #c9fdbc;
+    margin-top: 15px;
+}
+.image-content {
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-content {
+    max-width: 50%;
+    text-align: left;
+    background-color: #c9fdbc;
+    border-radius: 5%;
+}
+
+.text-content h2 {
+    margin-bottom: 20px;
+    font-family: 'Times New Roman';
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: #353D2f;
+}
+
+.text-content p {
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-size: 15px; 
+    color: #000;
+    margin-bottom: 20px; 
+    
+}
+
+.button {
+    width: 160px;
+    height: 40px;
+    background: #6b2738;
+    border: none;
+    margin: 20px auto;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    font-family: Arial;
+    color: #BFCC94;
+}
+
+.button a {
+    text-decoration: none;
+    color: #000;
+}
+
+.button:hover {
+    background-color: #fff;
+}
+
+
+/*  PRAROZ, 2021
+How To Create A Website using HTML & CSS | Step-by-Step Tutorial.
+YouTube video
+https://youtu.be/CQZxeoQeo5c
+Accessed at: 2 Setember 2024
+contented*/
+.contented {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 15px; 
+    background-color: #c9fdbc;
+    margin-top: 15px;
+}
+
+.text-contented {
+    max-width: 50%;
+    text-align: left;
+    margin-left: 10px; 
+    margin-bottom: 20px;
+    background-color: #c9fdbc;
+}
+
+.text-contented h2 {
+    margin-bottom: 20px;
+    font-family: 'Times New Roman';
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: #353D2f;
+}
+
+.text-contented p {
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-size: 15px; 
+    color: #000;
+    margin-bottom: 20px; 
+}
+
+.image-contented {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px; 
+    align-items: center; 
+}
+
+.image-contented img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain; 
+}
+.conteudodos {
+    width: 600px;
+    height: auto;
+    text-align: center;
+    margin-left: 450px;
+    padding: 20px;
+    background-color: #c9fdbc;
+}
+.conteudodos h1 {
+    margin-bottom: 20px;
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #353D2f;
+}
+
+.conteudodos h2 {
+    margin-bottom: 20px;
+    font-family: 'Times New Roman';
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: #353D2f;
+}
+.image{
+   margin-left: 62px;
+   align-items: center;
+   margin-top: 13px;
+   
+}
+.image h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #353D2f;
+}
+
+.conteudo {
+    text-align: center;
+    padding: 20px;
+}
+.conteudo h1 {
+    margin-bottom: 20px;
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #353D2f;
+}
+
+.conteudo h2 {
+    margin-bottom: 20px;
+    font-family: 'Times New Roman';
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: #353D2f;
+}
+h3{
+    max-width: 50%;
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #353D2f;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+}
+
+table td {
+    vertical-align: top;
+    padding: 10px;
+}
+
+.miniscreen1{
+    text-align: center;
+    padding: 10px;
+    width: 350px;
+    height: 450px;
+   background-color: #BFCC94;  
+   display: inline-block;
+}
+
+.miniscreen1 img{
+    max-width: 100%;
+    height: auto;
+}
+.miniscreen2{
+    text-align: center;
+    padding: 10px;
+    width: 250px;
+    height:300px;
+   background-color: #BFCC94;  
+   display: inline-block;
+}
+
+.miniscreen3{
+    text-align: center;
+    padding: 10px;
+    width: 400;
+    height: auto;
+   background-color: #BFCC94;  
+   display: inline-block;
+}
+
+.conteudoCourses {
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .conteudoCourses img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .conteudoCourses h2 {
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', serif;
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: #353d2f;
+    text-align: center;
+  }
+  
+  .conteudoCourses p {
+    font-style: italic;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 20px;
+    background-color: #BFCC94;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 750px;
+    margin-left: 350px;
+  }
+  
+  .conteudoCoursestext {
+    padding: 20px;
+    text-align: center;
+    background-color: #BFCC94;
+    width: 750px;
+    height: auto;
+    margin-left: 350px;
+  }
+  
+  .conteudoCoursestext h2 {
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', serif;
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: #353d2f;
+    text-align: center;
+    
+  }
+  
+  .conteudoCoursestext p {
+    font-family: Arial, sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 20px;
+    background-color: #BFCC94;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+
+.container{
+    width: 750px;
+    height: 500px;
+    border: 1px solid;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    justify-content:space-around;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.container h1{
+    text-align: center;
+}
+
+.first-row{
+     display: flex;
+}
+
+.owner{
+    width: 100%;
+    margin-right: 40px;
+}
+
+.input-field{
+    border: 1px solid #999;
+}
+
+.input-field input{
+    width: 100%;
+    border:none;
+    outline: none;
+    padding: 10px;
+}
+
+.selection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selection select{
+    padding: 10px 20px;
+}
+
+.container a{
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.container a:hover{
+    background-color: dodgerblue;
+}
+
+.cards img{
+    width: 100px;
+}
+
