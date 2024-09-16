@@ -118,7 +118,7 @@ ul li a:hover {
     width: 1450px;
     height: auto;
     margin-left: 30px;
-    background-color: #c9fdbc;
+    background-color: #f0eeee6d;
     border-radius: 15%;
     margin-top: 15px;
 }
@@ -132,7 +132,7 @@ ul li a:hover {
     max-width: 1200px;
     height: auto;
     margin: 0 auto;
-    background-color: #c9fdbc;
+    background-color: #f0eeee6d;
     margin-top: 15px;
 }
 .image-content {
@@ -149,7 +149,7 @@ ul li a:hover {
 .text-content {
     max-width: 50%;
     text-align: left;
-    background-color: #c9fdbc;
+    background-color: #f0eeee6d;
     border-radius: 5%;
 }
 
@@ -182,6 +182,7 @@ ul li a:hover {
     cursor: pointer;
     transition: background-color 0.4s ease;
     font-family: Arial;
+    font-weight: bold;
     color: #BFCC94;
 }
 
@@ -209,7 +210,7 @@ contented*/
     max-width: 1200px;
     margin: 0 auto;
     gap: 15px; 
-    background-color: #c9fdbc;
+    background-color: #f0eeee6d;
     margin-top: 15px;
 }
 
@@ -218,7 +219,7 @@ contented*/
     text-align: left;
     margin-left: 10px; 
     margin-bottom: 20px;
-    background-color: #c9fdbc;
+    background-color: #f0eeee6d;
 }
 
 .text-contented h2 {
@@ -256,7 +257,7 @@ contented*/
     text-align: center;
     margin-left: 450px;
     padding: 20px;
-    background-color: #c9fdbc;
+    background-color: #f0eeee6d;
 }
 .conteudodos h1 {
     margin-bottom: 20px;
@@ -365,8 +366,8 @@ table td {
   }
   
   .conteudoCourses img {
-    max-width: 100%;
-    height: auto;
+    max-width: 1366px;
+    height: 660;
     border-radius: 10px;
   }
   
@@ -389,14 +390,14 @@ table td {
     background-color: #BFCC94;
     border-radius: 8px;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     width: 750px;
     margin-left: 350px;
   }
   
   .conteudoCoursestext {
     padding: 20px;
-    text-align: center;
+    text-align: left;
     background-color: #BFCC94;
     width: 750px;
     height: auto;
@@ -409,7 +410,7 @@ table td {
     font-size: 35px;
     letter-spacing: 2px;
     color: #353d2f;
-    text-align: center;
+    text-align: left;
     
   }
   
@@ -423,7 +424,7 @@ table td {
     background-color: #BFCC94;
     border-radius: 8px;
     padding: 10px;
-    text-align: center;
+    text-align: left;
   }
   
 
