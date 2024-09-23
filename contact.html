@@ -23,7 +23,8 @@
             the Nation
           </h2>
         </div>
-        <div class="menu">
+        <div class="menu" id="navLinks">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
           <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="about.html">ABOUT</a></li>
@@ -37,6 +38,7 @@
             </li>
             <li><a href="log.html"><i class="fa-solid fa-user"></i></a></li>
           </ul>
+          <i class="fa fa-bars" onclick="showmenu()"></i>
         </div>
         <div class="search">
           <input
@@ -60,6 +62,7 @@
                 Email: empowerDBN@etn.ac.za <br />
                 Address: <br />
                 <iframe
+                class="map-frame"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110715.36824171784!2d30.908550591813885!3d-29.868447860636252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7aa0001bc61b7%3A0xcca75546c4aa6e81!2sDurban!5e0!3m2!1sen!2sza!4v1725536745909!5m2!1sen!2sza"
                   width="400"
                   height="400"
@@ -76,6 +79,7 @@
                 Email: empowerCT@etn.ac.za <br />
                 Address: <br />
                 <iframe
+                class="map-frame"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d847643.4418762036!2d17.996598748084892!3d-33.91264058752884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc500f8826eed7%3A0x687fe1fc2828aa87!2sCape%20Town!5e0!3m2!1sen!2sza!4v1725536774584!5m2!1sen!2sza"
                   width="400"
                   height="400"
@@ -92,6 +96,7 @@
                 Email: empowerJHB@etn.ac.za <br />
                 Address: <br />
                 <iframe
+                class="map-frame"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114584.91033200632!2d27.957622309325444!3d-26.171343972989206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c68f0406a51%3A0x238ac9d9b1d34041!2sJohannesburg!5e0!3m2!1sen!2sza!4v1725536798718!5m2!1sen!2sza"
                   width="400"
                   height="400"
@@ -106,6 +111,32 @@
         </table>
       </div>
     </div>
-   
+    <footer>
+      <p>Copyright 2024</p>
+      <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a></li>
+      <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
+      <li><a href="https://mail.google.com/"><i class="fa-solid fa-envelope"></i></a></li>
+    </footer>
+    <!--GreatStack
+    YouTube video
+    How To Make Website Using HTML & CSS | Full Responsive Multi Page Website Design Step by Step 2021
+    available at:https://youtu.be/oYRda7UtuhA?si=J2gH1iwy5SKf8CMM
+    Accessed at:23/09/2024
+    -->
+          <!--javascript-->
+          <script>
+
+
+            var navLinks = document.getElementById("navLinks");
+      
+       function showmenu(){
+           navLinks.style.right ="0";
+       }
+      
+       function hidemenu(){
+           navLinks.style.right ="-200px";
+       }
+       </script>
   </body>
 </html>

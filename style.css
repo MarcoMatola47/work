@@ -76,7 +76,7 @@ ul li a {
     transition: color 0.4s ease-in-out;
 }
 
-ul li a:hover {
+ ul li a:hover {
     color: #6b2738;
 }
 .fa-cart-shopping{
@@ -84,6 +84,9 @@ ul li a:hover {
 }
 .fa-user{
     font-size: 20px;
+}
+.menu .fa{
+    display: none;
 }
 
 .search {
@@ -112,6 +115,7 @@ ul li a:hover {
     background-color: #fff;
     color: #6b2738;
 }
+
 .cont {
     margin: 20px;
     padding: 10px;
@@ -191,7 +195,7 @@ ul li a:hover {
 }
 
 .button:hover {
-    background-color: #fff;
+    background-color: #e0e0e0;
 }
 
 
@@ -250,6 +254,18 @@ contented*/
     height: auto;
     object-fit: contain; 
 }
+.box {
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+   box-shadow :0.3s ease; /* Smooth transition */
+}
+
+.box:hover {
+    background-color: #e0e0e0; /* Change background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
 .conteudodos {
     width: 600px;
     height: auto;
@@ -284,9 +300,9 @@ contented*/
 .image{
    margin-left: 62px;
    align-items: center;
-   margin-top: 13px;
-   
+   margin-top: 13px; 
 }
+
 .image h1{
     text-align: center;
     margin-bottom: 20px;
@@ -334,49 +350,80 @@ table td {
     vertical-align: top;
     padding: 10px;
 }
+  /*
+The IIE,2024.WEDE5020/d/p/w
+MODULE MANUAL/GUIDE. 2012
+Sam's Movies
+hover efect*/
+.map-frame {
+    border: 2px solid #63A375; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+    margin: 20px auto; 
+    display: block; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.map-frame:hover {
+    transform: scale(1.02); 
+}
 
 .miniscreen1{
     text-align: center;
     padding: 10px;
-    width: 350px;
-    height: 450px;
-   background-color: #BFCC94;  
+    width: 410px;
+    height: 460px;  
    display: inline-block;
+   border: 2px solid #BFCC94; 
+   border-radius: 10px;
+   transition:  transform 0.3s ease;
 }
 
-.miniscreen1 img{
-    max-width: 100%;
-    height: auto;
+.miniscreen1:hover{
+    transform: scale(1.05);
 }
 .miniscreen2{
     text-align: center;
     padding: 10px;
     width: 250px;
-    height:300px;
-   background-color: #BFCC94;  
+    height:319px;
+    border: 2px solid #BFCC94; 
+    border-radius: 10px; 
    display: inline-block;
+   transition:  transform 0.3s ease;
+}
+.miniscreen2:hover{
+    transform: scale(1.05);
 }
 
-.miniscreen3{
+.miniscreen3 {
     text-align: center;
     padding: 10px;
-    width: 400;
+    width: 400px;
     height: auto;
-   background-color: #BFCC94;  
-   display: inline-block;
+    background-color: #BFCC94;  
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
 }
+
+.miniscreen3:hover {
+    background-color: #aabe83; 
+}
+/*end here*/
 
 .conteudoCourses {
     max-width: 100%;
     padding: 20px;
     text-align: center;
   }
+
   
   .conteudoCourses img {
     max-width: 1366px;
     height: 660;
     border-radius: 10px;
   }
+ 
   
   .conteudoCourses h2 {
     margin-bottom: 20px;
@@ -394,24 +441,43 @@ table td {
     font-size: 15px;
     color: #000;
     margin-bottom: 20px;
-    background-color: #BFCC94;
     border-radius: 8px;
     padding: 10px;
     text-align: left;
     width: 750px;
-    margin-left: 350px;
+    
   }
-  
-  .conteudoCoursestext {
+  /*
+The IIE,2024.WEDE5020/d/p/w
+MODULE MANUAL/GUIDE. 2012
+Sam's Movies
+hover efect*/
+  .box1 {
     padding: 20px;
     text-align: left;
-    background-color: #BFCC94;
+    height: auto;
     width: 750px;
     height: auto;
     margin-left: 350px;
-  }
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Apply transition for both background-color and box-shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Initial shadow */
+}
+.box2{
+    padding: 20px;
+    text-align: center;
+    height: auto;
+    width: 750px;
+    height: auto;
+}
+
+.box1:hover {
+    background-color: #e0e0e0; /* Change background on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
   
-  .conteudoCoursestext h2 {
+
+  
+  .box1 h2 {
     margin-bottom: 20px;
     font-family: 'Times New Roman', serif;
     font-size: 35px;
@@ -421,31 +487,36 @@ table td {
     
   }
   
-  .conteudoCoursestext p {
+  .box1 p {
     font-family: Arial, sans-serif;
     letter-spacing: 1.2px;
     line-height: 1.5;
     font-size: 15px;
     color: #000;
     margin-bottom: 20px;
-    background-color: #BFCC94;
     border-radius: 8px;
     padding: 10px;
     text-align: left;
   }
-  
-
+/*
+Web CodePro
+ YouTube video
+ How To Make Simple Payment Page Using HTML & CSS | HTML CSS Tutorial For Beginners
+ 2021
+ available at:https://youtu.be/lN9B4uvqVBU?si=I-4UzUnefFOW1vUm
+ Accesse at:23/09/2024
+*/  
 .container{
-    width: 750px;
-    height: 500px;
+    width: 700px;
+    height: 450px;
     border: 1px solid;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     padding: 40px;
     justify-content:space-around;
-    margin-top: 15px;
-    margin-left: 30px;
+    margin-top: 100px;
+    margin-left: 350px;
 }
 
 .container h1{
@@ -500,4 +571,223 @@ table td {
 .cards img{
     width: 100px;
 }
+footer {
+    background-color: #333;
+    height: auto; 
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px; 
+}
+footer li {
+        display: inline-block; /* Ensure list items are inline */
+    }
+
+
+.fa-instagram {
+    font-size: 35px;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.fa-x-twitter{
+    font-size: 35px;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.fa-square-facebook{
+    font-size: 35px;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.fa-envelope{
+    font-size: 35px;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and scale */
+}
+
+.fa-instagram:hover {
+    color: #e4405f; 
+    transform: scale(1.1); 
+}
+
+.fa-x-twitter:hover {
+    color: #000; 
+    transform: scale(1.1); 
+}
+
+.fa-square-facebook:hover {
+    color: #1877f2; 
+    transform: scale(1.1); 
+}
+
+.fa-envelope:hover {
+    color: #d14836; 
+    transform: scale(1.1); 
+}
+/*  Adrian Twarog
+CSS Media queries tutorial for responsive Design
+YouTube video
+https://youtu.be/j1AhSWFcZpg?si=gGP1g9kkGhXGbk8X
+Accessed at: 18 Setember 2024
+@media query
+*/
+/* Slaying the Dragon
+Master Media queries and responsive css web design like a chameleon
+YouTube video
+https://youtu.be/K24lUqcT0Ms?si=Sy7Jur7ogEkksKEy
+Accessed at: 18 Setember 2024
+@media query
+*/
+@media screen and (max-width: 768px) {
+    .main {
+        height: auto;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .icon {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    /*GreatStack
+    YouTube video
+    How To Make Website Using HTML & CSS | Full Responsive Multi Page Website Design Step by Step
+    2021
+    available at:https://youtu.be/oYRda7UtuhA?si=J2gH1iwy5SKf8CMM
+    Accessed at:23/09/2024*/
+    .menu {
+        position: absolute;
+        top: 0;
+        right: -200px; 
+        background-color: #6b2738;
+        height: 100vh;
+        width: 200px;
+        z-index:2;
+        text-align: left;
+        transition:1s;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        padding: 30px;
+        margin: 0;
+        gap: 10px;
+    }
+
+    .menu ul li {
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .menu .fa {
+        display: block;
+        color: #fff;
+        font-size: 22px;
+        margin: 10px;
+        cursor: pointer;
+    }
+/*End here*/
+    .search {
+        width: 100%;
+        margin-top: 10px;
+        display: flex; 
+        justify-content: space-between;
+    }
+
+    .srch {
+        width: 70%; 
+    }
+
+    .btn {
+        width: 25%; 
+    }
+
+    .cont, .content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .image-content, .text-content,
+    .text-contented, .image-contented {
+        max-width: 100%;
+    }
+
+    .text-content h2, .text-contented h2 {
+        font-size: 28px;
+    }
+
+    .text-content p, .text-contented p {
+        font-size: 14px;
+    }
+
+    .button {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .conteudodos, .conteudo {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .conteudodos h1, .conteudo h1 {
+        font-size: 30px;
+    }
+
+    .conteudodos h2, .conteudo h2 {
+        font-size: 28px;
+    }
+
+    .conteudodos p, .conteudo p {
+        font-size: 14px;
+    }
+
+    .image img {
+        width: auto;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .conteudoCourses, .conteudoCourses p, .conteudoCoursestext {
+        width: auto;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .conteudoCourses img, .conteudoCoursestext img {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse; /* Ensures no spacing between cells */
+    }
+
+    table td {
+        padding: 10px; /* Adds space around table cell content */
+        text-align: center; /* Centers the content */
+    }
+
+    .map-frame {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .miniscreen1, .miniscreen2, .miniscreen3 {
+        width: 100%;
+    }
+}
+
 

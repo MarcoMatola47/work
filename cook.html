@@ -23,7 +23,8 @@
             the Nation
           </h2>
         </div>
-        <div class="menu">
+        <div class="menu" id="navLinks">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
           <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="about.html">ABOUT</a></li>
@@ -37,6 +38,7 @@
             </li>
             <li><a href="log.html"><i class="fa-solid fa-user"></i></a></li>
           </ul>
+          <i class="fa fa-bars" onclick="showmenu()"></i>
         </div>
         <div class="search">
           <input
@@ -49,42 +51,80 @@
         </div>
       </div>
     </div>
-    <div class="conteudoCourses">
-      <img src="images/cooking.jpeg" alt="" width="1336" height="450" />
-      <h2>Cooking Course</h2>
-      <p>
-        Duration: 6 weeks <br />
-        Fees: R750 <br />
-        Mode:In-person <br />
-      </p>
+    <div class="cont">
+      <div class="conteudoCourses">
+        <img src="images/cooking.jpeg" alt="" width="1336" height="450" />
+        <div class="box1">
+          <h2>Cooking Course</h2>
+          <p>
+            Duration: 6 weeks <br />
+            Fees: R750 <br />
+            Mode:In-person <br />
+          </p>
+        </div>
+       
+      </div>
+      <div class="box1">
+        <h2>About the course</h2>
+        <p>
+          This 6-week course is designed to equip participants with essential <br>
+          cooking skills, focusing on preparing nutritious meals for families. It <br> 
+          is ideal for individuals looking to improve their culinary abilities and <br>
+          gain knowledge about balanced diets.
+        </p>
+      </div>
+      
+      <div class="box1">
+        <h2>Purpose:</h2>
+        <p>
+          To teach participants how to prepare and cook nutritious meals, focusing <br>
+          on the nutritional requirements for a better job, and better meal preparation.
+        </p>
+      </div>
+      
+      <div class="box1">
+        <h2>Course Content:</h2>
+        <p>
+          Nutritional Requirements for a Healthy Body: Understanding the essential nutrients required for balanced diets. <br />
+          Types of Protein, Carbohydrates, and Vegetables: A detailed look at various food groups and their importance. <br />
+          Planning Meals: Techniques for organizing and planning nutritious meals. <br />
+          Preparation and Cooking of Meals: Practical skills for preparing and cooking meals that meet nutritional needs.
+        </p>
+      </div>
+      
+      <div class="box2">
+        <a href="child.html"><button class="button">Back</button></a>
+        <a href="garden.html"><button class="button">Next</button></a>
+      </div>
+      
     </div>
-    <div class="conteudoCoursestext">
-      <h2>About the course</h2>
-      <p>
-        This 6-week course is designed to equip participants with essential <br>
-        cooking skills, focusing on preparing nutritious meals for families. It <br> 
-        is ideal for individuals looking to improve their culinary abilities and <br>
-        gain knowledge about balanced diets.
-      </p>
-      <h2>Purpose:</h2>
-      <p>
-        To teach participants how to prepare and cook nutritious meals, focusing <br>
-        on the nutritional requirements for a better job, and better mealing <br>
-        prepare
-      </p>
-      <h2>Course Content:</h2>
-      <p>
-        Nutritional Requirements for a Healthy Body: Understanding the essential
-        nutrients required for balanced diets. <br />
-        Types of Protein, Carbohydrates, and Vegetables: A detailed look at
-        various food groups and their importance. <br />
-        Planning Meals: Techniques for organizing and planning nutritious meals.
-        <br />
-        Preparation and Cooking of Meals: Practical skills for preparing and
-        cooking meals that meet nutritional needs.
-      </p>
-      <a href="child.html"><button class="button">Back</button></a>
-      <a href="garden.html"><button class="button">Next</button></a>
-    </div>
+    <footer>
+      <p>Copyright 2024</p>
+      <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a></li>
+      <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
+      <li><a href="https://mail.google.com/"><i class="fa-solid fa-envelope"></i></a></li>
+    </footer>
+    <!--GreatStack
+    YouTube video
+    How To Make Website Using HTML & CSS | Full Responsive Multi Page Website Design Step by Step 2021
+    available at:https://youtu.be/oYRda7UtuhA?si=J2gH1iwy5SKf8CMM
+    Accessed at:23/09/2024
+    -->
+          <!--javascript-->
+          <script>
+
+
+            var navLinks = document.getElementById("navLinks");
+      
+       function showmenu(){
+           navLinks.style.right ="0";
+       }
+      
+       function hidemenu(){
+           navLinks.style.right ="-200px";
+       }
+       </script>
+   
   </body>
 </html>

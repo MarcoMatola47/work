@@ -24,7 +24,8 @@
             the Nation
           </h2>
         </div>
-        <div class="menu">
+        <div class="menu" id="navLinks">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
           <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="about.html">ABOUT</a></li>
@@ -38,6 +39,7 @@
             </li>
             <li><a href="log.html"><i class="fa-solid fa-user"></i></a></li>
           </ul>
+          <i class="fa fa-bars" onclick="showmenu()"></i>
         </div>
         <div class="search">
           <input
@@ -57,30 +59,47 @@
           <tr>
             <td>
               <div class="miniscreen1">
-                <img src="images/month.png" alt="" width="400" height="400" />
-                <h1>Six Month Courses</h1>
+                  <img src="images/month (1).png" alt="Six Month Courses" width="400" height="400" />
+                  <a href="month.html"><button class="button">See more</button></a>
               </div>
             </td>
             <td>
               <div class="miniscreen1">
-                <img src="images/week.png" alt="" width="400" height="400" />
-                <h1>Six week Courses</h1>
+                  <img src="images/week (1).png" alt="Six Week Courses" width="400" height="400" />
+                  <a href="week.html"><button class="button">See more</button></a>
               </div>
             </td>
           </tr>
-          <tr>
-            <td>
-              <a href="month.html"><button class="button">See more</button></a>
-            </td>
-            <td>
-              <a href="week.html"><button class="button">See more</button></a>
-            </td>
-          </tr>
         </table>
-        <a href="invoice.html"><button class="button">buy</button></a>
       </div>
       
     </div>
-   
+    <footer>
+      <p>Copyright 2024</p>
+      <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a></li>
+      <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
+      <li><a href="https://mail.google.com/"><i class="fa-solid fa-envelope"></i></a></li>
+    </footer>
+    <!--GreatStack
+    YouTube video
+    How To Make Website Using HTML & CSS | Full Responsive Multi Page Website Design Step by Step 2021
+    available at:https://youtu.be/oYRda7UtuhA?si=J2gH1iwy5SKf8CMM
+    Accessed at:23/09/2024
+    -->
+          <!--javascript-->
+          <script>
+
+
+            var navLinks = document.getElementById("navLinks");
+      
+       function showmenu(){
+           navLinks.style.right ="0";
+       }
+      
+       function hidemenu(){
+           navLinks.style.right ="-200px";
+       }
+       </script>
   </body>
 </html>
