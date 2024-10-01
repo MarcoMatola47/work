@@ -12,7 +12,7 @@ Accessed at: 2 Setember 2024
 .main {
     width: 100%;
     background-color: #63A375;
-    height: 13vh;
+    height: 14vh;
 }
 
 .navbar {
@@ -498,79 +498,164 @@ hover efect*/
     padding: 10px;
     text-align: left;
   }
-/*
+
+  .table-style {
+align-self: center;
+background-color: #ccc;
+width: 500px;
+margin-top: 150px;
+margin-bottom: 50px;
+}
+.table-style h2{
+    margin-bottom: 20px;
+    font-family: 'Times New Roman';
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #353D2f;
+}
+
+.td1{
+    width: 50px;
+    
+}
+  
+  .btns{
+    width: 80px;
+    background: #6b2738;
+    border: 0;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 200px;
+    transition: background-color 0.4s ease;
+  }
+  .btns:hover {
+    background-color: #fff;
+}
+
+.popup{
+    width: 100%;
+    max-width: 700px; 
+    background-color: #ddd;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform o.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+  /*
 Web CodePro
  YouTube video
  How To Make Simple Payment Page Using HTML & CSS | HTML CSS Tutorial For Beginners
  2021
  available at:https://youtu.be/lN9B4uvqVBU?si=I-4UzUnefFOW1vUm
  Accesse at:23/09/2024
-*/  
-.container{
-    width: 700px;
-    height: 450px;
-    border: 1px solid;
+*/ 
+  .container {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border: 1px solid #ddd;
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    padding: 40px;
-    justify-content:space-around;
-    margin-top: 100px;
-    margin-left: 350px;
+    padding: 20px;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin: 100px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius:0;
 }
 
-.container h1{
+.container h1 {
     text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.first-row{
-     display: flex;
+.first-row, .second-row, .third-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
 }
 
-.owner{
-    width: 100%;
-    margin-right: 40px;
+.owner, .cvv, .card-number {
+    width: 48%;
 }
 
-.input-field{
+.input-field {
     border: 1px solid #999;
+    border-radius: 0;
 }
 
-.input-field input{
+.input-field input {
     width: 100%;
-    border:none;
+    border: none;
     outline: none;
     padding: 10px;
+    border-radius: 0;
+    font-size: 16px;
 }
 
-.selection{
+.selection {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
 }
 
-.selection select{
-    padding: 10px 20px;
+.selection select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 0;
+    border: 1px solid #999;
 }
 
-.container a{
+.container a {
     background-color: blueviolet;
     color: white;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 10px;
+    padding: 12px;
     font-size: 18px;
-    transition: 0.5s;
+    border-radius: 0;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    display: block;
 }
 
-.container a:hover{
+.container a:hover {
     background-color: dodgerblue;
 }
 
-.cards img{
-    width: 100px;
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
 }
+
+.cards img {
+    width: 50px;
+    height: auto;
+}
+
 footer {
     background-color: #333;
     height: auto; 
@@ -587,7 +672,7 @@ footer li {
         display: inline-block; /* Ensure list items are inline */
     }
 
-
+    
 .fa-instagram {
     font-size: 35px;
     color: #fff;
