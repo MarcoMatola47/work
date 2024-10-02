@@ -154,6 +154,7 @@ ul li a {
     background-color: #fff;
     border-radius: 8px; 
     padding: 10px;
+    margin-top: 100px;
 }
 
 .text-content h2 {
@@ -654,6 +655,56 @@ Web CodePro
 .cards img {
     width: 50px;
     height: auto;
+}
+
+.form-log {
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    max-width: 300px;
+    width: 100%;
+    margin-top: 150px;
+    margin-left: 600px;
+    text-align: center;
+}
+
+.form-log form {
+    display: flex;
+    flex-direction: column;
+}
+.form-log input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.form-log input::placeholder {
+    color: #999;
+    font-size: 12px;
+}
+.form-log h2{
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', serif;
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: #353d2f;
+    text-align: left;
+}
+.buttons{
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #353d2f;
+    border: 0;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.buttons:hover{
+    color: #1877f2;
 }
 
 footer {
