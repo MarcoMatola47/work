@@ -9,12 +9,97 @@ YouTube video
 https://youtu.be/CQZxeoQeo5c
 Accessed at: 2 Setember 2024
  until btn*/
-.main {
+ .main {
+    height: 55vh;
     width: 100%;
-    background-color: #63A375;
-    height: 14vh;
-}
-
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/banner.png);
+    background-position: center;
+    position: relative;
+  }
+  .mainl {
+    height: 55vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/life.jpeg);
+    background-position: center;
+    position: relative;
+  }
+  .mainla {
+    height: 55vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/land.jpg);
+    background-position: center;
+    position: relative;
+  }
+  .mains {
+    height: 55vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/sewing.jpg);
+    background-position: center;
+    position: relative;
+  }
+  .mainf {
+    height: 55vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/first.jpg);
+    background-position: center;
+    position: relative;
+  }
+  .mainc {
+    height: 55vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/child.jpeg);
+    background-position: center;
+    position: relative;
+  }
+  .mainco {
+    height: 55vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/cooking.jpeg);
+    background-position: center;
+    position: relative;
+  }
+  .maing {
+    height: 55vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/garden.jpg);
+    background-position: center;
+    position: relative;
+  }
+  .mainn {
+    width: 100%;
+    background-color: #63a375;
+    height: 15vh;
+  }
+  
+  .main h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    size: 50px;
+    margin-top: 150px;
+  }
+  .main h2 {
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    size: 50px;
+  }
+  .main h3 {
+    text-align: center;
+    color: #fff;
+    font-weight: 200;
+    size: 50px;
+    margin-left: 370px;
+  }
+  
 .navbar {
     width: 85%;
     margin: auto;
@@ -86,6 +171,9 @@ ul li a {
     font-size: 20px;
 }
 .menu .fa{
+    display: none;
+}
+.navbar .fa{
     display: none;
 }
 
@@ -178,16 +266,15 @@ ul li a {
 .button {
     width: 160px;
     height: 40px;
-    background: #6b2738;
-    border: none;
+
     margin: 20px auto;
     font-size: 20px;
     border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.4s ease;
-    font-family: Arial;
+    transition:  0.4s ease;
     font-weight: bold;
-    color: #BFCC94;
+    font-family: Arial;
+    color: #353D2f;
 }
 
 .button a {
@@ -196,7 +283,7 @@ ul li a {
 }
 
 .button:hover {
-    background-color: #e0e0e0;
+    background-color: #6b2738;
 }
 
 
@@ -469,6 +556,7 @@ hover efect*/
     height: auto;
     width: 750px;
     height: auto;
+    margin-left: 320px;
 }
 
 .box1:hover {
@@ -540,6 +628,7 @@ margin-bottom: 50px;
 .popup{
     width: 100%;
     max-width: 700px; 
+    margin-top: 470px;
     background-color: #ddd;
     border-radius: 6px;
     position: absolute;
@@ -785,8 +874,14 @@ Accessed at: 18 Setember 2024
 
     .navbar {
         flex-direction: column;
-        align-items: flex-start;
         padding: 10px;
+    }
+    .navbar .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
     }
 
     .icon {
@@ -846,84 +941,62 @@ Accessed at: 18 Setember 2024
     .btn {
         width: 25%; 
     }
-
-    .cont, .content {
+    .cont, .conteudodos {
         flex-direction: column;
         align-items: stretch;
     }
 
-    .image-content, .text-content,
-    .text-contented, .image-contented {
-        max-width: 100%;
+    .content, .contented, .box1, .box2 {
+        flex-direction: column;
+        text-align: center;
     }
-
-    .text-content h2, .text-contented h2 {
-        font-size: 28px;
-    }
-
-    .text-content p, .text-contented p {
-        font-size: 14px;
-    }
-
-    .button {
-        width: 100%;
-        font-size: 18px;
-    }
-
-    .conteudodos, .conteudo {
-        width: 100%;
-        margin: 0;
-        padding: 10px;
-    }
-
-    .conteudodos h1, .conteudo h1 {
-        font-size: 30px;
-    }
-
-    .conteudodos h2, .conteudo h2 {
-        font-size: 28px;
-    }
-
-    .conteudodos p, .conteudo p {
-        font-size: 14px;
-    }
-
     .image img {
-        width: auto;
-    }
-
-    h3 {
-        font-size: 18px;
-    }
-
-    .conteudoCourses, .conteudoCourses p, .conteudoCoursestext {
-        width: auto;
-        margin: 0;
-        padding: 10px;
-    }
-
-    .conteudoCourses img, .conteudoCoursestext img {
         width: 100%;
+        height: auto;
+    }
+    
+    .image-content, .image-contented {
+        max-width: 100%;
+        padding-right: 0;
+        margin: 0 auto;
+    }
+
+    .image-content img, .image-contented img, .conteudoCourses img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Collapse the text containers for responsiveness */
+    .text-content, .text-contented, .conteudoCourses p {
+        max-width: 100%;
+        padding: 10px;
+        margin: 0;
     }
 
     table {
-        width: 100%;
-        border-collapse: collapse; /* Ensures no spacing between cells */
+        display: block;
+        overflow-x: auto;
     }
-
-    table td {
-        padding: 10px; /* Adds space around table cell content */
-        text-align: center; /* Centers the content */
-    }
-
-    .map-frame {
-        margin: 0 auto;
-        width: 100%;
-    }
-
+    /* Minimize the height and padding of mini screens */
     .miniscreen1, .miniscreen2, .miniscreen3 {
         width: 100%;
+        height: auto;
     }
+
+    /* Button adjustments */
+    .button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    /* Box adjustments for padding and size */
+    .box, .box1, .box2 {
+        width: 100%;
+        padding: 15px;
+    }
+
 }
+
+
 
 
