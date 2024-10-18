@@ -10,7 +10,7 @@ https://youtu.be/CQZxeoQeo5c
 Accessed at: 2 Setember 2024
  until btn*/
  .main {
-    height: 55vh;
+    height: 45vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
       url(images/banner.png);
@@ -84,7 +84,6 @@ Accessed at: 2 Setember 2024
     color: #fff;
     font-weight: 700;
     size: 50px;
-    margin-top: 150px;
   }
   .main h2 {
     text-align: center;
@@ -591,23 +590,38 @@ hover efect*/
   .table-style {
 align-self: center;
 background-color: #ccc;
-width: 500px;
+width: 550px;
 margin-top: 150px;
 margin-bottom: 50px;
 }
 .table-style h2{
-    margin-bottom: 20px;
     font-family: 'Times New Roman';
     font-size: 30px;
     letter-spacing: 2px;
     color: #353D2f;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+.table-style p{
+    font-family: Arial, sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+    font-size: 15px;
+    color: #000;
 }
 
 .td1{
-    width: 50px;
-    
+    width: 60px;
 }
-  
+.connt{
+    width: 600px;
+    height: auto;
+    text-align: left;
+    margin-left: 450px;
+
+    background-color: #ccc;
+}
+
   .btns{
     width: 80px;
     background: #6b2738;

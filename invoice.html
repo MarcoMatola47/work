@@ -45,7 +45,7 @@
     </div>
   </div>
 
-  <div class="cont">
+  <div class="connt">
 
     <table class="table-style">
       <tr>
@@ -55,6 +55,12 @@
             <input type="text" id="name" name="name" placeholder="Name" required><br /><br />
             <input type="tel" id="phone" name="phone" placeholder="+27" required><br /><br />
             <input type="email" id="email" name="email" placeholder="Email" required><br /><br />
+            
+          <input type="text" id="address" name="address" placeholder="Address" required><br /><br >
+          <input type="text" id="city" name="city" placeholder="City" required><br /><br />
+          <input type="text" id="state" name="state" placeholder="State" required><br /><br />
+            <h2>Select your courses:</h2>
+          </form>
         </td>
       </tr>
       <tr>
@@ -164,7 +170,7 @@
             </div>
           </div>
         </div>
-        <a href="" onclick="closePopup()">Confirm</a>
+        <a href="invoice_two.html">Confirm</a>
       </div>
     </div>
   </div>
@@ -210,9 +216,7 @@
     function openPopup() {
       popup.classList.add("open-popup");
     }
-    function closePopup() {
-      popup.classList.remove("open-popup");
-    }
+
 
     //intact Adobe, 2018, 
     //How to Calculate Two Textbox Values in Javascript HTML,
@@ -280,17 +284,33 @@
 checkboxes.forEach((checkbox) => {
   checkbox.addEventListener('change', calculateTotalAndAverage);
 });
-function validateForm() {
-    const name = document.getElementById('name').value;
-    const phone = document.getElementById('phone').value;
-    const email = document.getElementById('email').value;
 
-    if (name === '' || phone === '' || email === '') {
-        alert('Please fill in all required fields.');
-    } else {
-        openPopup(); // Call your function to open the popup here
-    }
-}
+const form = document.getElementById('course-form');
+const name = document.getElementById('name');
+const phone = document.getElementById('phone');
+const email = document.getElementById('email');
+const address = document.getElementById('address');
+const city = document.getElementById('city');
+const state = document.getElementById('state');
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const nameValue = name.value;
+  const phoneValue = phone.value;
+  const emailValue = email.value;
+  const addressValue = address.value;
+  const cityValue = city.value;
+  const stateValue = state.value;
+
+  localStorage.setItem('name', nameValue);
+  localStorage.setItem('phone', phoneValue);
+  localStorage.setItem('email', emailValue);
+  localStorage.setItem('address', addressValue);
+  localStorage.setItem('city', cityValue);
+  localStorage.setItem('state', stateValue);
+
+  window.location.href = 'invoice_two.html';
+})
 
   </script>
 </body>
