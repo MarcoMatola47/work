@@ -557,6 +557,14 @@ hover efect*/
     height: auto;
     margin-left: 320px;
 }
+.inframe{
+    border: 2px solid #63A375; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+    margin: 20px auto; 
+    display: block; 
+    transition: transform 0.3s ease-in-out; 
+}
 
 .box1:hover {
     background-color: #e0e0e0; /* Change background on hover */
@@ -730,7 +738,7 @@ Web CodePro
     border: 1px solid #999;
 }
 
-.container a {
+.container .botao {
     background-color: blueviolet;
     color: white;
     text-align: center;
@@ -738,13 +746,13 @@ Web CodePro
     text-decoration: none;
     padding: 12px;
     font-size: 18px;
-    border-radius: 0;
+    border-radius: 35px;
     margin-top: 20px;
     transition: background-color 0.3s ease;
     display: block;
 }
 
-.container a:hover {
+.container .botao:hover {
     background-color: dodgerblue;
 }
 
@@ -882,6 +890,9 @@ Accessed at: 18 Setember 2024
 @media query
 */
 @media screen and (max-width: 768px) {
+    body{
+        display: center;
+    }
     .main {
         height: auto;
     }
@@ -955,18 +966,52 @@ Accessed at: 18 Setember 2024
     .btn {
         width: 25%; 
     }
-    .cont, .conteudodos {
-        flex-direction: column;
-        align-items: stretch;
+    .cont {
+        max-width: 100%;
+        width: 90%;
+        display: left;
+    }
+
+    .conteudodos {
+        max-width: 100%;
+        display: left;
+        display: center;
+        flex-wrap: wrap;
+        margin-left: -1px;
+    }
+
+     .box1, .box2 {
+        max-width: 100%;
+        width: 100%;
+        padding: 15px; /* Adjust padding as needed */
+        text-align: left;
+        margin-bottom: 15px;
+        margin-left: 0;
+    }
+    .box {
+        max-width: 100%;
+        display: left;
+        flex-wrap: wrap;
+        text-align: left;
+    }
+
+    h1, h2 {
+        font-size: 2.5rem; /* Adjust heading sizes */
+    }
+
+    p {
+        font-size: 1rem; /* Adjust body text size */
     }
 
     .content, .contented, .box1, .box2 {
+        max-width: 100%;
         flex-direction: column;
         text-align: center;
     }
     .image img {
         width: 100%;
         height: auto;
+        border-radius: 5%;
     }
     
     .image-content, .image-contented {
@@ -989,7 +1034,8 @@ Accessed at: 18 Setember 2024
 
     table {
         display: block;
-        overflow-x: auto;
+        overflow-y: auto;
+        width: 100%;
     }
     /* Minimize the height and padding of mini screens */
     .miniscreen1, .miniscreen2, .miniscreen3 {
@@ -1001,14 +1047,35 @@ Accessed at: 18 Setember 2024
     .button {
         width: 100%;
         font-size: 16px;
+        margin-top: 10px;
     }
+   
+      
+      .conteudoCourses {
+        max-width: 100%;
+        display: left;
+        flex-wrap: wrap;
+      }
+      .connt{
+        max-width: 100%;
+        display: center;
+        flex-wrap: wrap;
+        margin-left: 1px;
+        margin-top: 13px;
+      }
+      .form-log{
+        width: 90%;
+        max-width: 100%;
+        display: left;
+        flex-wrap: wrap;
+        margin-left: 1px;
+        margin-top: 23px;
+      }
+      
 
-    /* Box adjustments for padding and size */
-    .box, .box1, .box2 {
-        width: 100%;
-        padding: 15px;
-    }
+      
 
+      
 }
 
 

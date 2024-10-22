@@ -170,9 +170,9 @@
             </div>
           </div>
         </div>
-        <a href="invoice_two.html">Confirm</a>
-      </div>
+        <button class="botao" type="submit" onclick="submitForm(); window.location.href='invoice_two.html';">Pay</button>
     </div>
+  </div>
   </div>
   <footer>
     <p>Copyright 2024</p>
@@ -285,34 +285,26 @@ checkboxes.forEach((checkbox) => {
   checkbox.addEventListener('change', calculateTotalAndAverage);
 });
 
-const form = document.getElementById('course-form');
-const name = document.getElementById('name');
-const phone = document.getElementById('phone');
-const email = document.getElementById('email');
-const address = document.getElementById('address');
-const city = document.getElementById('city');
-const state = document.getElementById('state');
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
+function submitForm() {
+    // Get form values
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+    const address = document.getElementById('address').value;
+    const city = document.getElementById('city').value;
+    const state = document.getElementById('state').value;
 
-  const nameValue = name.value;
-  const phoneValue = phone.value;
-  const emailValue = email.value;
-  const addressValue = address.value;
-  const cityValue = city.value;
-  const stateValue = state.value;
+    // Store values in localStorage
+    localStorage.setItem('name', name);
+    localStorage.setItem('phone', phone);
+    localStorage.setItem('email', email);
+    localStorage.setItem('address', address);
+    localStorage.setItem('city', city);
+    localStorage.setItem('state', state);
 
-  localStorage.setItem('name', nameValue);
-  localStorage.setItem('phone', phoneValue);
-  localStorage.setItem('email', emailValue);
-  localStorage.setItem('address', addressValue);
-  localStorage.setItem('city', cityValue);
-  localStorage.setItem('state', stateValue);
-
-  window.location.href = 'invoice_two.html';
-})
-
+    // Redirect to invoice_two.html
+    window.location.href = 'invoice_two.html';
+  }
   </script>
-</body>
-
+</body> 
 </html>
