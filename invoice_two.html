@@ -1,97 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Confirmation page for your Empowering the Nation course registration. View your invoice details and payment information." />
+    <title> Confirmation Page </title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <div class="main">
-        <div class="navbar">
-          <div class="icon">
-            <img src="images/logo.jpg" alt="" width="100" height="100" />
-            <h2 class="logo">
-              Empowering <br />
-              the Nation
-            </h2>
-          </div>
-          <div class="menu" id="navLinks">
-            <i class="fa fa-times" onclick="hidemenu()"></i>
-            <ul>
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="about.html">ABOUT</a></li>
-              <li><a href="courses.html">COURSES</a></li>
-              <li><a href="news.html">NEWS</a></li>
-              <li><a href="contact.html">CONTACT</a></li>
-              <li>
-                <a href="invoice.html"
-                  ><i class="fa-solid fa-cart-shopping"></i
-                ></a>
-              </li>
-              <li><a href="log.html"><i class="fa-solid fa-user"></i></a></li>
-            </ul>
-          </div>
-          <i class="fa fa-bars" onclick="showmenu()"></i>
-          <div class="search">
-            <input
-              class="srch"
-              type="search"
-              name="search"
-              placeholder="Type to search"
-            />
-            <button class="btn">Search</button>
-          </div>
+      <div class="navbar">
+        <div class="icon">
+          <img src="images/logo.jpg" alt="" width="100" height="100" />
+          <h2 class="logo">
+            Empowering <br />
+            the Nation
+          </h2>
         </div>
-        <h1>Empowering the Nation</h1>
-        <h2>Courses</h2>
-        <h3>Six-Month</h3>
+        <div class="menu" id="navLinks">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li>
+              <a href="invoice.html"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </li>
+            <li>
+              <a href="log.html"><i class="fa-solid fa-user"></i></a>
+            </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+        <div class="search">
+          <input
+            class="srch"
+            type="search"
+            name="search"
+            placeholder="Type to search"
+          />
+          <button class="btn">Search</button>
+        </div>
       </div>
-      <h1>Invoice</h1>
-      <div class="connt">
-        <h1>Invoice Confirmation</h1>
-        <p>Name: <span id="name"></span></p>
-        <p>Phone: <span id="phone"></span></p>
-        <p>Email: <span id="email"></span></p>
-        <p>Address: <span id="address"></span></p>
-        <p>City: <span id="city"></span></p>
-        <p>State: <span id="state"></span></p>
-      </div>
-        <footer>
-            <p>Copyright 2024</p>
-            <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a></li>
-            <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
-            <li><a href="https://mail.google.com/"><i class="fa-solid fa-envelope"></i></a></li>
-          </footer>
-          <!--GreatStack
+      <h1>Empowering the Nation</h1>
+      <h2>Courses</h2>
+      <h3>Six-Month</h3>
+    </div>
+    <h1>Invoice</h1>
+    <div class="connt">
+      <h1>Invoice Confirmation</h1>
+     <!--Web Dev Simplified,2019
+JavaScript Form Validation
+YouTube video
+available at:https://youtu.be/In0nB0ABaUk?si=rMZFbIfiub8lhsV-
+accessed at: 01/10/24--> 
+      <p>Name: <span id="name"></span></p>
+      <p>Phone: <span id="phone"></span></p>
+      <p>Email: <span id="email"></span></p>
+      <p>Address: <span id="address"></span></p>
+      <p>City: <span id="city"></span></p>
+      <p>State: <span id="state"></span></p>
+      <hr />
+      <p>Total: <span id="total"></span></p>
+      <p>Discount: <span id="discount"></span></p>
+      <hr />
+      <h2>Payment Details (For Demo Only - Not Secure)</h2>
+      <p>Card Owner: <span id="displayCardOwner"></span></p>
+      <p>CVV: <span id="displayCardCvv"></span></p>
+      <p>Card Number: <span id="displayCardNumber"></span></p>
+      <p>
+        Expiry: <span id="displayCardMonth"></span>/<span
+          id="displayCardYear"
+        ></span>
+      </p>
+      <hr />
+      <p>Thank you for your purchase!</p>
+    </div>
+    <footer>
+      <p>Copyright 2024</p>
+      <li>
+        <a href="https://www.instagram.com/"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/"
+          ><i class="fa-brands fa-square-facebook"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://mail.google.com/"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+      </li>
+    </footer>
+    <!--GreatStack
           YouTube video
           How To Make Website Using HTML & CSS | Full Responsive Multi Page Website Design Step by Step 2021
           available at:https://youtu.be/oYRda7UtuhA?si=J2gH1iwy5SKf8CMM
           Accessed at:23/09/2024
           -->
-                <!--javascript-->
-                <script>
-      
-      
-                  var navLinks = document.getElementById("navLinks");
-            
-             function showmenu(){
-                 navLinks.style.right ="0";
-             }
-            
-             function hidemenu(){
-                 navLinks.style.right ="-200px";
-             }
-             document.getElementById('name').innerText = localStorage.getItem('name');
-    document.getElementById('phone').innerText = localStorage.getItem('phone');
-    document.getElementById('email').innerText = localStorage.getItem('email');
-    document.getElementById('address').innerText = localStorage.getItem('address');
-    document.getElementById('city').innerText = localStorage.getItem('city');
-    document.getElementById('state').innerText = localStorage.getItem('state');
-             </script>
-</body>
+    <!--javascript-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showmenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hidemenu() {
+        navLinks.style.right = "-200px";
+      }
+      document.getElementById("name").innerText = localStorage.getItem("name");
+      document.getElementById("phone").innerText =
+        localStorage.getItem("phone");
+      document.getElementById("email").innerText =
+        localStorage.getItem("email");
+      document.getElementById("address").innerText =
+        localStorage.getItem("address");
+      document.getElementById("city").innerText = localStorage.getItem("city");
+      document.getElementById("state").innerText =
+        localStorage.getItem("state");
+      document.getElementById("total").innerText =
+        localStorage.getItem("total");
+      document.getElementById("discount").innerText =
+        localStorage.getItem("discount");
+      document.getElementById("displayCardOwner").innerText =
+        localStorage.getItem("cardOwner");
+      document.getElementById("displayCardCvv").innerText =
+        localStorage.getItem("cardCvv");
+      document.getElementById("displayCardNumber").innerText =
+        localStorage.getItem("cardNumber");
+      document.getElementById("displayCardMonth").innerText =
+        localStorage.getItem("cardMonth");
+      document.getElementById("displayCardYear").innerText =
+        localStorage.getItem("cardYear");
+    </script>
+  </body>
 </html>

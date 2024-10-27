@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Invoice</title>
+  <meta name="description" content="Empowering the Nation Course Registration" />
+  <title>Invoice Confirmation Page - Empowering the Nation</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -66,24 +67,24 @@
       <tr>
         <td class="td1">
           <h2>SIX MONTHS</h2>
-          <input type="checkbox" class="course" value="1500" placeholder="First aid" /> First aid (R$1500) <br />
-          <input type="checkbox" class="course" value="1500" placeholder="Sewing" /> Sewing (R$1500) <br />
-          <input type="checkbox" class="course" value="1500" placeholder="Landscaping" /> Landscaping (R$1500) <br />
-          <input type="checkbox" class="course" value="1500" placeholder="Life skills" /> Life skills (R$1500) <br />
+          <input type="checkbox" class="course" value="1500" placeholder="First aid" /> First aid (R1500) <br />
+          <input type="checkbox" class="course" value="1500" placeholder="Sewing" /> Sewing (R1500) <br />
+          <input type="checkbox" class="course" value="1500" placeholder="Landscaping" /> Landscaping (R1500) <br />
+          <input type="checkbox" class="course" value="1500" placeholder="Life skills" /> Life skills (R1500) <br />
         </td>
         <td>
           <h2>SIX Weeks</h2>
-          <input type="checkbox" class="course" value="750" placeholder="Childminding" /> Childminding (R$750) <br />
-          <input type="checkbox" class="course" value="750" placeholder="Cooking" /> Cooking (R$750) <br />
+          <input type="checkbox" class="course" value="750" placeholder="Childminding" /> Childminding (R750) <br />
+          <input type="checkbox" class="course" value="750" placeholder="Cooking" /> Cooking (R750) <br />
           <input type="checkbox" class="course" value="750" placeholder="Garden Maintenance" /> Garden Maintenance
-          (R$750) <br />
+          (R750) <br />
         </td>
       </tr>
       <tr>
         <td>
-          <p>Total: R$<span id="total">0</span></p>
+          <p>Total: R<span id="total">0</span></p>
           <p>Avarege:<span id="avarege"></span></p>
-          <p>Discounts: <span id="discount"></span> </p>
+          <p>Discounts:R <span id="discount"></span> </p>
         </td>
       </tr>
       <tr>
@@ -114,19 +115,19 @@
           <div class="owner">
             <h3>Owner</h3>
             <div class="input-field">
-              <input type="text" placeholder="Name" />
+              <input type="text" id="cardOwner" placeholder="Name" />
             </div>
           </div>
           <div class="cvv">
             <h3>CVV</h3>
-            <input type="password" placeholder="CVV" />
+            <input type="password" id="cardCvv" placeholder="CVV" />
           </div>
         </div>
         <div class="second-row">
           <div class="card-number">
             <h3>card-number</h3>
             <div class="input-field">
-              <input type="number" placeholder="XXXX XXXX XXXX" />
+              <input type="number" id="cardNumber" placeholder="XXXX XXXX XXXX" />
             </div>
           </div>
         </div>
@@ -134,7 +135,7 @@
           <h3>Experation date:</h3>
           <div class="selection">
             <div class="date">
-              <select name="months" id="months" title="months">
+              <select name="months" id="cardMonth" title="months">
                 <option value="Jan">Jan</option>
                 <option value="Feb">Feb</option>
                 <option value="Mar">Mar</option>
@@ -148,7 +149,7 @@
                 <option value="Nov">Nov</option>
                 <option value="Dec">Dec</option>
               </select>
-              <select name="years" id="years" title="years">
+              <select name="years" id="cardYear" title="years">
                 <option value="2035">2035</option>
                 <option value="2034">2034</option>
                 <option value="2033">2033</option>
@@ -284,6 +285,12 @@
 checkboxes.forEach((checkbox) => {
   checkbox.addEventListener('change', calculateTotalAndAverage);
 });
+//Web Dev Simplified,2019
+//JavaScript Form Validation
+//YouTube video
+//available at:https://youtu.be/In0nB0ABaUk?si=rMZFbIfiub8lhsV-
+ //accessed at: 01/10/24
+ 
 
 function submitForm() {
     // Get form values
@@ -293,6 +300,20 @@ function submitForm() {
     const address = document.getElementById('address').value;
     const city = document.getElementById('city').value;
     const state = document.getElementById('state').value;
+    const total = document.getElementById('total').textContent;
+    const discount = document.getElementById('discount').textContent;
+    const cardOwner = document.getElementById('cardOwner').value;
+  const cardCvv = document.getElementById('cardCvv').value;
+  const cardNumber = document.getElementById('cardNumber').value;
+  const cardMonth = document.getElementById('cardMonth').value;
+  const cardYear = document.getElementById('cardYear').value;
+
+    // Validate form fields
+    if (!name || !phone || !email || !address || !city || !state) {
+      alert('Please fill in all required fields.');
+      return;
+    }
+
 
     // Store values in localStorage
     localStorage.setItem('name', name);
@@ -301,6 +322,13 @@ function submitForm() {
     localStorage.setItem('address', address);
     localStorage.setItem('city', city);
     localStorage.setItem('state', state);
+    localStorage.setItem('total', total);
+    localStorage.setItem('discount', discount);
+    localStorage.setItem('cardOwner', cardOwner);
+    localStorage.setItem('cardCvv', cardCvv);
+    localStorage.setItem('cardNumber', cardNumber);
+    localStorage.setItem('cardMonth', cardMonth);
+    localStorage.setItem('cardYear', cardYear);
 
     // Redirect to invoice_two.html
     window.location.href = 'invoice_two.html';
