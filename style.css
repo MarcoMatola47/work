@@ -13,7 +13,7 @@ Accessed at: 2 Setember 2024
     height: 45vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-      url(images/banner.png);
+      url(images/banner.webp);
     background-position: center;
     position: relative;
   }
@@ -53,7 +53,7 @@ Accessed at: 2 Setember 2024
     height: 55vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-      url(images/child.jpeg);
+      url(images/child.webp);
     background-position: center;
     position: relative;
   }
@@ -61,7 +61,7 @@ Accessed at: 2 Setember 2024
     height: 55vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-      url(images/cooking.jpeg);
+      url(images/cooking.jpg);
     background-position: center;
     position: relative;
   }
@@ -161,7 +161,7 @@ ul li a {
 }
 
  ul li a:hover {
-    color: #6b2738;
+    color: #63a375;
 }
 .fa-cart-shopping{
     font-size: 20px;
@@ -183,14 +183,14 @@ ul li a {
 
 .srch {
     padding: 5px 10px;
-    border: 1px solid #6b2738;
+    border: 1px solid #63a375;
     border-radius: 5px;
 }
 
 .btn {
     margin-left: 10px;
     padding: 5px 10px;
-    background-color: #6b2738;
+    background-color: #63a375;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -200,7 +200,7 @@ ul li a {
 
 .btn:hover {
     background-color: #fff;
-    color: #6b2738;
+    color: #63a375;
 }
 
 .cont {
@@ -282,7 +282,7 @@ ul li a {
 }
 
 .button:hover {
-    background-color: #6b2738;
+    background-color: #63a375;
 }
 
 
@@ -739,7 +739,7 @@ Web CodePro
 }
 
 .container .botao {
-    background-color: blueviolet;
+    background-color: #FF9800;
     color: white;
     text-align: center;
     text-transform: uppercase;
