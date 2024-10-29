@@ -1,0 +1,443 @@
+.cont {
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+
+.content {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 20px;
+        height: auto;
+        padding: 20px;
+        margin-top: 15px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+.image-content {
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-content {
+    max-width: 50%;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 8px; 
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.text-content h2 {
+    margin-bottom: 20px;
+    font-family: 'Times New Roman';
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: #353D2f;
+}
+
+.text-content p {
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+    font-size: 15px; 
+    color: #000;
+    margin-bottom: 20px; 
+    
+}
+
+.button {
+    width: 160px;
+    height: 40px;
+
+    margin: 20px auto;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:  0.4s ease;
+    font-weight: bold;
+    font-family: Arial;
+    color: #353D2f;
+}
+
+.button a {
+    text-decoration: none;
+    color: #000;
+}
+
+.button:hover {
+    background-color: #63a375;
+}
+
+
+/*  PRAROZ, 2021
+How To Create A Website using HTML & CSS | Step-by-Step Tutorial.
+YouTube video
+https://youtu.be/CQZxeoQeo5c
+Accessed at: 2 Setember 2024
+contented*/
+.contented {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 15px; 
+    background-color: #fff;
+    margin-top: 15px;
+}
+
+.text-contented {
+    max-width: 50%;
+    text-align: left;
+    margin-left: 10px; 
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.text-contented h2 {
+    margin-bottom: 20px;
+    font-family: 'Times New Roman';
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: #353D2f;
+}
+
+.text-contented p {
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+    font-size: 15px; 
+    color: #000;
+    margin-bottom: 20px; 
+}
+
+.image-contented {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px; 
+    align-items: center; 
+}
+
+.image-contented img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain; 
+}
+.box {
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+   box-shadow :0.3s ease; /* Smooth transition */
+}
+
+.box:hover {
+    background-color: #e0e0e0; /* Change background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+.conteudodos {
+    width: 600px;
+    height: auto;
+    text-align: left;
+    margin-left: 450px;
+    padding: 20px;
+    background-color: #fff;
+}
+.conteudodos h1 {
+    margin-bottom: 20px;
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #353D2f;
+}
+
+.conteudodos h2 {
+    margin-bottom: 20px;
+    font-family: 'Times New Roman';
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: #353D2f;
+}
+.conteudodos p{
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+    font-size: 15px; 
+    color: #000;
+    margin-bottom: 20px; 
+}
+.image{
+   margin-left: 62px;
+   align-items: center;
+   margin-top: 13px; 
+}
+
+.image h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #353D2f;
+}
+
+.conteudo {
+    text-align: center;
+    padding: 20px;
+}
+.conteudo h1 {
+    margin-bottom: 20px;
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #353D2f;
+}
+
+.conteudo h2 {
+    margin-bottom: 20px;
+    font-family: 'Times New Roman';
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: #353D2f;
+}
+h3{
+    max-width: 50%;
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #353D2f;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+}
+
+table td {
+    vertical-align: top;
+    padding: 10px;
+}
+  /*
+The IIE,2024.WEDE5020/d/p/w
+MODULE MANUAL/GUIDE. 2012
+Sam's Movies
+hover efect*/
+.map-frame {
+    border: 2px solid #63A375; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+    margin: 20px auto; 
+    display: block; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.map-frame:hover {
+    transform: scale(1.02); 
+}
+
+.miniscreen1{
+    text-align: center;
+    padding: 10px;
+    width: 410px;
+    height: 460px;  
+   display: inline-block;
+   border: 2px solid #BFCC94; 
+   border-radius: 10px;
+   transition:  transform 0.3s ease;
+}
+
+.miniscreen1:hover{
+    transform: scale(1.05);
+}
+.miniscreen2{
+    text-align: center;
+    padding: 10px;
+    width: 250px;
+    height:319px;
+    border: 2px solid #BFCC94; 
+    border-radius: 10px; 
+   display: inline-block;
+   transition:  transform 0.3s ease;
+}
+.miniscreen2:hover{
+    transform: scale(1.05);
+}
+
+.miniscreen3 {
+    text-align: center;
+    padding: 10px;
+    width: 400px;
+    height: auto;
+    background-color: #BFCC94;  
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.miniscreen3:hover {
+    background-color: #aabe83; 
+}
+/*end here*/
+
+.conteudoCourses {
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  
+  .conteudoCourses img {
+    max-width: 1366px;
+    height: 660;
+    border-radius: 10px;
+  }
+ 
+  
+  .conteudoCourses h2 {
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', serif;
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: #353d2f;
+    text-align: center;
+  }
+  
+  .conteudoCourses p {
+    font-style: italic;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: left;
+    width: 750px;
+    
+  }
+  /*
+The IIE,2024.WEDE5020/d/p/w
+MODULE MANUAL/GUIDE. 2012
+Sam's Movies
+hover efect*/
+  .box1 {
+    padding: 20px;
+    text-align: left;
+    height: auto;
+    width: 750px;
+    height: auto;
+    margin-left: 350px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Apply transition for both background-color and box-shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Initial shadow */
+}
+.box2{
+    padding: 20px;
+    text-align: center;
+    height: auto;
+    width: 750px;
+    height: auto;
+    margin-left: 320px;
+}
+.inframe{
+    border: 2px solid #63A375; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+    margin: 20px auto; 
+    display: block; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.box1:hover {
+    background-color: #e0e0e0; /* Change background on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+  
+
+  
+  .box1 h2 {
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', serif;
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: #353d2f;
+    text-align: left;
+    
+  }
+  
+  .box1 p {
+    font-family: Arial, sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .table-style {
+align-self: center;
+background-color: #ccc;
+width: 550px;
+margin-top: 150px;
+margin-bottom: 50px;
+}
+.table-style h2{
+    font-family: 'Times New Roman';
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #353D2f;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+.table-style p{
+    font-family: Arial, sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+    font-size: 15px;
+    color: #000;
+}
+
+.td1{
+    width: 60px;
+}
+.connt{
+    width: 600px;
+    height: auto;
+    text-align: left;
+    margin-left: 450px;
+
+    background-color: #ccc;
+}
+
+  .btns{
+    width: 80px;
+    background: #6b2738;
+    border: 0;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 200px;
+    transition: background-color 0.4s ease;
+  }
+  .btns:hover {
+    background-color: #fff;
+}

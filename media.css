@@ -1,0 +1,206 @@
+/*  Adrian Twarog
+CSS Media queries tutorial for responsive Design
+YouTube video
+https://youtu.be/j1AhSWFcZpg?si=gGP1g9kkGhXGbk8X
+Accessed at: 18 Setember 2024
+@media query
+*/
+/* Slaying the Dragon
+Master Media queries and responsive css web design like a chameleon
+YouTube video
+https://youtu.be/K24lUqcT0Ms?si=Sy7Jur7ogEkksKEy
+Accessed at: 18 Setember 2024
+@media query
+*/
+@media screen and (max-width: 768px) {
+    body{
+        display: center;
+    }
+    .main {
+        height: auto;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .navbar .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .icon {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    /*GreatStack
+    YouTube video
+    How To Make Website Using HTML & CSS | Full Responsive Multi Page Website Design Step by Step
+    2021
+    available at:https://youtu.be/oYRda7UtuhA?si=J2gH1iwy5SKf8CMM
+    Accessed at:23/09/2024*/
+    .menu {
+        position: absolute;
+        top: 0;
+        right: -200px; 
+        background-color: #6b2738;
+        height: 100vh;
+        width: 200px;
+        z-index:2;
+        text-align: left;
+        transition:1s;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        padding: 30px;
+        margin: 0;
+        gap: 10px;
+    }
+
+    .menu ul li {
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .menu .fa {
+        display: block;
+        color: #fff;
+        font-size: 22px;
+        margin: 10px;
+        cursor: pointer;
+    }
+/*End here*/
+    .search {
+        width: 100%;
+        margin-top: 10px;
+        display: flex; 
+        justify-content: space-between;
+    }
+
+    .srch {
+        width: 70%; 
+    }
+
+    .btn {
+        width: 25%; 
+    }
+    .cont {
+        max-width: 100%;
+        width: 90%;
+        display: left;
+    }
+
+    .conteudodos {
+        max-width: 100%;
+        display: left;
+        display: center;
+        flex-wrap: wrap;
+        margin-left: -1px;
+    }
+
+     .box1, .box2 {
+        max-width: 100%;
+        width: 100%;
+        padding: 15px; /* Adjust padding as needed */
+        text-align: left;
+        margin-bottom: 15px;
+        margin-left: 0;
+    }
+    .box {
+        max-width: 100%;
+        display: left;
+        flex-wrap: wrap;
+        text-align: left;
+    }
+
+    h1, h2 {
+        font-size: 2.5rem; /* Adjust heading sizes */
+    }
+
+    p {
+        font-size: 1rem; /* Adjust body text size */
+    }
+
+    .content, .contented, .box1, .box2 {
+        max-width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .image img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+    }
+    
+    .image-content, .image-contented {
+        max-width: 100%;
+        padding-right: 0;
+        margin: 0 auto;
+    }
+
+    .image-content img, .image-contented img, .conteudoCourses img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Collapse the text containers for responsiveness */
+    .text-content, .text-contented, .conteudoCourses p {
+        max-width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    table {
+        display: block;
+        overflow-y: auto;
+        width: 100%;
+    }
+    /* Minimize the height and padding of mini screens */
+    .miniscreen1, .miniscreen2, .miniscreen3 {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Button adjustments */
+    .button {
+        width: 100%;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+   
+      
+      .conteudoCourses {
+        max-width: 100%;
+        display: left;
+        flex-wrap: wrap;
+      }
+      .connt{
+        max-width: 100%;
+        display: center;
+        flex-wrap: wrap;
+        margin-left: 1px;
+        margin-top: 13px;
+      }
+      .form-log{
+        width: 90%;
+        max-width: 100%;
+        display: left;
+        flex-wrap: wrap;
+        margin-left: 1px;
+        margin-top: 23px;
+      }
+      
+
+      
+
+      
+}
+
+
+
+

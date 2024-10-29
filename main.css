@@ -1,0 +1,205 @@
+body{
+    margin: 0;
+    padding: 0; 
+    background-color: #e1e1e1;
+}
+/* PRAROZ, 2021
+How To Create A Website using HTML & CSS | Step-by-Step Tutorial.
+YouTube video
+https://youtu.be/CQZxeoQeo5c
+Accessed at: 2 Setember 2024
+ until btn*/
+ .main {
+    height: 45vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/banner.webp);
+    background-position: center;
+    position: relative;
+  }
+  .mainl {
+    height: 45vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/life.jpeg);
+    background-position: center;
+    position: relative;
+  }
+  .mainla {
+    height: 45vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/land.jpg);
+    background-position: center;
+    position: relative;
+  }
+  .mains {
+    height: 45vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/sewing.jpg);
+    background-position: center;
+    position: relative;
+  }
+  .mainf {
+    height: 45vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/first.jpg);
+    background-position: center;
+    position: relative;
+  }
+  .mainc {
+    height: 45vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/child.webp);
+    background-position: center;
+    position: relative;
+  }
+  .mainco {
+    height: 45vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/cooking.jpg);
+    background-position: center;
+    position: relative;
+  }
+  .maing {
+    height: 45vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/garden.jpg);
+    background-position: center;
+    position: relative;
+  }
+  .mainn {
+    width: 100%;
+    background-color: #63a375;
+    height: 15vh;
+  }
+  
+  .main h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    size: 50px;
+  }
+  .main h2 {
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    size: 50px;
+  }
+  .main h3 {
+    text-align: center;
+    color: #fff;
+    font-weight: 200;
+    size: 50px;
+    margin-left: 370px;
+  }
+  
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+/*
+Easy WebCode, 2022.
+How To Create Rounded And Circular Images In HTML And CSS Tutorial.
+YouTube video
+ https://youtu.be/AEgTw3xl53o?si=miJ9dxAfvVTiYA1g
+ Accessed at: 2 Setember 2024
+ icon img*/
+.icon img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 80px; 
+    height: 80px;
+    margin-right: 15px; 
+}
+
+.icon h2 {
+    font-family: 'Times New Roman';
+    font-size: 24px; 
+    letter-spacing: 2px;
+    color: #fff;
+    margin: 0; 
+}
+
+.menu {
+    width: auto; 
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-right: 20px;
+}
+
+ul li {
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.4s ease-in-out;
+}
+
+ ul li a:hover {
+    color: #63a375;
+}
+.fa-cart-shopping{
+    font-size: 20px;
+}
+.fa-user{
+    font-size: 20px;
+}
+.menu .fa{
+    display: none;
+}
+.navbar .fa{
+    display: none;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.srch {
+    padding: 5px 10px;
+    border: 1px solid #63a375;
+    border-radius: 5px;
+}
+
+.btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #63a375;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #63a375;
+}
+
