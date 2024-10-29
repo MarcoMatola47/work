@@ -18,7 +18,7 @@ Accessed at: 2 Setember 2024
     position: relative;
   }
   .mainl {
-    height: 55vh;
+    height: 45vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
       url(images/life.jpeg);
@@ -26,7 +26,7 @@ Accessed at: 2 Setember 2024
     position: relative;
   }
   .mainla {
-    height: 55vh;
+    height: 45vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
       url(images/land.jpg);
@@ -34,7 +34,7 @@ Accessed at: 2 Setember 2024
     position: relative;
   }
   .mains {
-    height: 55vh;
+    height: 45vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
       url(images/sewing.jpg);
@@ -42,7 +42,7 @@ Accessed at: 2 Setember 2024
     position: relative;
   }
   .mainf {
-    height: 55vh;
+    height: 45vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
       url(images/first.jpg);
@@ -50,7 +50,7 @@ Accessed at: 2 Setember 2024
     position: relative;
   }
   .mainc {
-    height: 55vh;
+    height: 45vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
       url(images/child.webp);
@@ -58,7 +58,7 @@ Accessed at: 2 Setember 2024
     position: relative;
   }
   .mainco {
-    height: 55vh;
+    height: 45vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
       url(images/cooking.jpg);
@@ -66,7 +66,7 @@ Accessed at: 2 Setember 2024
     position: relative;
   }
   .maing {
-    height: 55vh;
+    height: 45vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
       url(images/garden.jpg);
